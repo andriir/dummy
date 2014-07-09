@@ -1,3 +1,5 @@
+: fixed issues  ISALE-148 and VTA-590 eof.
+
 dummy
 =====
 
@@ -10,3 +12,4 @@ line 4
 line 5
 line 6
 line 7
+line 8
