@@ -1,5 +1,4 @@
-ISALE-148
-Fixed #VTA-589.
+Fized ISALE-148 Fixed #VTA-589.
 VTA-590 eof.
 
 
