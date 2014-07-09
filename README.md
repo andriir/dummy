@@ -1,4 +1,7 @@
-: fixed issues  ISALE-148 and VTA-590 eof.
+ISALE-148
+Fixed #VTA-589.
+VTA-590 eof.
+
 
 dummy
 =====
@@ -16,3 +19,4 @@ line 8
 line 9
 line 10
 LIne 11
+Line 12
