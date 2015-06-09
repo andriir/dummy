@@ -6,6 +6,19 @@ package com.ap.dummyapp;
 public abstract class AbstractCar<T extends Fuel> implements Car {
     protected Fuel fuel;
 
+    public void setPackageService(GenericEntityServiceImpl<Fuel> packageService) {
+        this.packageService = packageService;
+    }
+
+    GenericEntityServiceImpl<Fuel> packageService;
+
+
+
+    GenericEntityServiceImpl<Fuel> getService() {
+        return packageService;
+    }
+
+
     @Override
     public void setFuel(Fuel fuel) {
         this.fuel = fuel;
@@ -13,6 +26,7 @@ public abstract class AbstractCar<T extends Fuel> implements Car {
 
     @Override
     public Fuel getFuel() {
-        return this.fuel;
+        packageService.test();
+        return packageService.save(this.fuel);
     }
 }
