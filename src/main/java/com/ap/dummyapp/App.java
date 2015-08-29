@@ -1,10 +1,12 @@
 package com.ap.dummyapp;
 
 import security.GlobalPermission;
+import security.PermissionType;
 import security.PermissionTypeBlock;
 import security.PermissionTypeGroup;
 
 import java.io.*;
+import java.util.Set;
 
 /**
  * Hello world!
@@ -16,6 +18,11 @@ public class App {
         try {
             w = new FileWriter(fnew, false);
 
+            Set<String> dbSet = PermissionType.getPermissionTypes();
+//            for (String s : dbSet) {
+//                w.append("\t" + s + "\n");
+//            }
+
 //            for (PermissionTypeBlock rootElement : PermissionTypeBlock.getRootElements()) {
             for (PermissionTypeBlock rootElement: PermissionTypeBlock.values()) {
                 if (rootElement == PermissionTypeBlock.SETTINGS) {
@@ -26,7 +33,11 @@ public class App {
 
                 for (PermissionTypeGroup group : rootElement.getGroups()) {
                     for (GlobalPermission permission : rootElement.getHeaders()) {
-                        w.append("\t<" + group + "_" + permission + "/>\n");
+                        String permName = group + "_" + permission;
+                        //check if it is in the list of permissions
+                        if (dbSet.contains(permName)) {
+                            w.append("\t<" + permName + "/>\n");
+                        }
                     }
                 }
             }
