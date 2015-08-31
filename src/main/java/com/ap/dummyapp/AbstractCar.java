@@ -26,7 +26,7 @@ public abstract class AbstractCar<T extends Fuel> implements Car {
 
     @Override
     public Fuel getFuel() {
-        packageService.test();
+//        packageService.test();
         return packageService.save(this.fuel);
     }
 }

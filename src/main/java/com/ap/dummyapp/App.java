@@ -2,6 +2,7 @@ package com.ap.dummyapp;
 
 import Permissions.DPermission;
 import Permissions.PermissionsToPagesStrings;
+import Permissions.TransactionDocumentList;
 import security.GlobalPermission;
 import security.PermissionType;
 import security.PermissionTypeBlock;
@@ -41,11 +42,20 @@ public class App {
                             DPermission p = map.get(permName);
                             if (p != null) {
                                 w.append(generateTestCase(p));
+                                if (TransactionDocumentList.all.contains(permName)) {
+                                    //add one more test case but with different name
+                                    p.setName(p.getName().replace("_READ", "_PRINT"));
+                                    w.append(generateTestCase(p));
+                                }
                             } else {
                                 w.append(generateTestCase(permName));
                             }
                         }
                     }
+
+
+
+
                 }
 
                 w.append(String.format("</testsuite>\n"));

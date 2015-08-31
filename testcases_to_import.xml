@@ -17,6 +17,23 @@
 	<li>		ADDRESS_TYPE_READ;</li>
 </ul>]]></preconditions>
 </testcase>
+<testcase name="SALES_QUOTE_PRINT - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesQuote;</li>
+	<li>		salesQuotesList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+	<li>		CUSTOMER_READ;</li>
+	<li>		LOCATION_READ;</li>
+	<li>		DEPARTMENT_READ;</li>
+	<li>		TRADING_TERM_READ;</li>
+	<li>		CONTACT_READ;</li>
+	<li>		ADDRESS_TYPE_READ;</li>
+</ul>]]></preconditions>
+</testcase>
 <testcase name="SALES_QUOTE_CREATE - Allowed">
 </testcase>
 <testcase name="SALES_QUOTE_UPDATE - Allowed">
@@ -24,6 +41,24 @@
 <testcase name="SALES_QUOTE_VOID - Allowed">
 </testcase>
 <testcase name="SALES_ORDER_READ - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesOrder;</li>
+	<li>		salesOrdersList;</li>
+	<li>		warehousingSalesOrdersList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+	<li>		CUSTOMER_READ;</li>
+	<li>		LOCATION_READ;</li>
+	<li>		DEPARTMENT_READ;</li>
+	<li>		TRADING_TERM_READ;</li>
+	<li>		CONTACT_READ;</li>
+	<li>		ADDRESS_TYPE_READ;</li>
+</ul>]]></preconditions>
+</testcase>
+<testcase name="SALES_ORDER_PRINT - Allowed">
 	<summary><![CDATA[<p>Pages:</p><ul>
 	<li>		salesOrder;</li>
 	<li>		salesOrdersList;</li>
@@ -64,6 +99,23 @@
 	<li>		ADDRESS_TYPE_READ;</li>
 </ul>]]></preconditions>
 </testcase>
+<testcase name="SALES_DELIVERY_PRINT - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesDeliveriesList;</li>
+	<li>		salesDelivery;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+	<li>		CUSTOMER_READ;</li>
+	<li>		LOCATION_READ;</li>
+	<li>		DEPARTMENT_READ;</li>
+	<li>		TRADING_TERM_READ;</li>
+	<li>		CONTACT_READ;</li>
+	<li>		ADDRESS_TYPE_READ;</li>
+</ul>]]></preconditions>
+</testcase>
 <testcase name="SALES_DELIVERY_CREATE - Allowed">
 </testcase>
 <testcase name="SALES_DELIVERY_UPDATE - Allowed">
@@ -71,6 +123,23 @@
 <testcase name="SALES_DELIVERY_VOID - Allowed">
 </testcase>
 <testcase name="SALES_INVOICE_READ - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesInvoice;</li>
+	<li>		salesInvoicesList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+	<li>		CUSTOMER_READ;</li>
+	<li>		LOCATION_READ;</li>
+	<li>		DEPARTMENT_READ;</li>
+	<li>		TRADING_TERM_READ;</li>
+	<li>		CONTACT_READ;</li>
+	<li>		ADDRESS_TYPE_READ;</li>
+</ul>]]></preconditions>
+</testcase>
+<testcase name="SALES_INVOICE_PRINT - Allowed">
 	<summary><![CDATA[<p>Pages:</p><ul>
 	<li>		salesInvoice;</li>
 	<li>		salesInvoicesList;</li>
@@ -126,6 +195,23 @@
 	<li>		ADDRESS_TYPE_READ;</li>
 </ul>]]></preconditions>
 </testcase>
+<testcase name="SALES_RETURN_PRINT - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesReturn;</li>
+	<li>		salesReturnsList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+	<li>		CUSTOMER_READ;</li>
+	<li>		LOCATION_READ;</li>
+	<li>		DEPARTMENT_READ;</li>
+	<li>		TRADING_TERM_READ;</li>
+	<li>		CONTACT_READ;</li>
+	<li>		ADDRESS_TYPE_READ;</li>
+</ul>]]></preconditions>
+</testcase>
 <testcase name="SALES_RETURN_CREATE - Allowed">
 </testcase>
 <testcase name="SALES_RETURN_UPDATE - Allowed">
@@ -133,6 +219,23 @@
 <testcase name="SALES_RETURN_VOID - Allowed">
 </testcase>
 <testcase name="SALES_RETURN_AUTHORISATION_READ - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesReturnAuthorisation;</li>
+	<li>		salesReturnAuthorisationList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+	<li>		CUSTOMER_READ;</li>
+	<li>		LOCATION_READ;</li>
+	<li>		DEPARTMENT_READ;</li>
+	<li>		TRADING_TERM_READ;</li>
+	<li>		CONTACT_READ;</li>
+	<li>		ADDRESS_TYPE_READ;</li>
+</ul>]]></preconditions>
+</testcase>
+<testcase name="SALES_RETURN_AUTHORISATION_PRINT - Allowed">
 	<summary><![CDATA[<p>Pages:</p><ul>
 	<li>		salesReturnAuthorisation;</li>
 	<li>		salesReturnAuthorisationList;</li>
@@ -228,6 +331,23 @@
 	<li>		ADDRESS_TYPE_READ;</li>
 </ul>]]></preconditions>
 </testcase>
+<testcase name="PURCHASE_ORDER_PRINT - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseOrder;</li>
+	<li>		purchaseOrdersList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+	<li>		CUSTOMER_READ;</li>
+	<li>		LOCATION_READ;</li>
+	<li>		DEPARTMENT_READ;</li>
+	<li>		TRADING_TERM_READ;</li>
+	<li>		CONTACT_READ;</li>
+	<li>		ADDRESS_TYPE_READ;</li>
+</ul>]]></preconditions>
+</testcase>
 <testcase name="PURCHASE_ORDER_CREATE - Allowed">
 </testcase>
 <testcase name="PURCHASE_ORDER_UPDATE - Allowed">
@@ -251,6 +371,23 @@
 	<li>		ADDRESS_TYPE_READ;</li>
 </ul>]]></preconditions>
 </testcase>
+<testcase name="PURCHASE_RECEIVAL_PRINT - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseReceival;</li>
+	<li>		purchaseReceivalList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+	<li>		SUPPLIER_READ;</li>
+	<li>		LOCATION_READ;</li>
+	<li>		DEPARTMENT_READ;</li>
+	<li>		TRADING_TERM_READ;</li>
+	<li>		CONTACT_READ;</li>
+	<li>		ADDRESS_TYPE_READ;</li>
+</ul>]]></preconditions>
+</testcase>
 <testcase name="PURCHASE_RECEIVAL_CREATE - Allowed">
 </testcase>
 <testcase name="PURCHASE_RECEIVAL_UPDATE - Allowed">
@@ -258,6 +395,23 @@
 <testcase name="PURCHASE_RECEIVAL_VOID - Allowed">
 </testcase>
 <testcase name="PURCHASE_INVOICE_READ - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseInvoice;</li>
+	<li>		purchaseInvoicesList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+	<li>		SUPPLIER_READ;</li>
+	<li>		LOCATION_READ;</li>
+	<li>		DEPARTMENT_READ;</li>
+	<li>		TRADING_TERM_READ;</li>
+	<li>		CONTACT_READ;</li>
+	<li>		ADDRESS_TYPE_READ;</li>
+</ul>]]></preconditions>
+</testcase>
+<testcase name="PURCHASE_INVOICE_PRINT - Allowed">
 	<summary><![CDATA[<p>Pages:</p><ul>
 	<li>		purchaseInvoice;</li>
 	<li>		purchaseInvoicesList;</li>
@@ -305,6 +459,23 @@
 	<li>		ADDRESS_TYPE_READ;</li>
 </ul>]]></preconditions>
 </testcase>
+<testcase name="PURCHASE_RETURN_PRINT - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseReturn;</li>
+	<li>		purchaseReturnsList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+	<li>		SUPPLIER_READ;</li>
+	<li>		LOCATION_READ;</li>
+	<li>		DEPARTMENT_READ;</li>
+	<li>		TRADING_TERM_READ;</li>
+	<li>		CONTACT_READ;</li>
+	<li>		ADDRESS_TYPE_READ;</li>
+</ul>]]></preconditions>
+</testcase>
 <testcase name="PURCHASE_RETURN_CREATE - Allowed">
 </testcase>
 <testcase name="PURCHASE_RETURN_UPDATE - Allowed">
@@ -312,6 +483,23 @@
 <testcase name="PURCHASE_RETURN_VOID - Allowed">
 </testcase>
 <testcase name="PURCHASE_RETURN_AUTHORISATION_READ - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseReturnAuthorisation;</li>
+	<li>		purchaseReturnAuthorisationList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+	<li>		SUPPLIER_READ;</li>
+	<li>		LOCATION_READ;</li>
+	<li>		DEPARTMENT_READ;</li>
+	<li>		TRADING_TERM_READ;</li>
+	<li>		CONTACT_READ;</li>
+	<li>		ADDRESS_TYPE_READ;</li>
+</ul>]]></preconditions>
+</testcase>
+<testcase name="PURCHASE_RETURN_AUTHORISATION_PRINT - Allowed">
 	<summary><![CDATA[<p>Pages:</p><ul>
 	<li>		purchaseReturnAuthorisation;</li>
 	<li>		purchaseReturnAuthorisationList;</li>
@@ -559,11 +747,33 @@
 	<li>		INVENTORY_READ;</li>
 </ul>]]></preconditions>
 </testcase>
+<testcase name="PICKING_SLIP_PRINT - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		pickingSlip;</li>
+	<li>		pickingSlipList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+</ul>]]></preconditions>
+</testcase>
 <testcase name="PICKING_SLIP_CREATE - Allowed">
 </testcase>
 <testcase name="PICKING_SLIP_UPDATE - Allowed">
 </testcase>
 <testcase name="PUT_AWAY_READ - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		putAway;</li>
+	<li>		putAwayList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+</ul>]]></preconditions>
+</testcase>
+<testcase name="PUT_AWAY_PRINT - Allowed">
 	<summary><![CDATA[<p>Pages:</p><ul>
 	<li>		putAway;</li>
 	<li>		putAwayList;</li>
@@ -679,6 +889,23 @@
 	<li>		ADDRESS_TYPE_READ;</li>
 </ul>]]></preconditions>
 </testcase>
+<testcase name="SALES_CREDIT_PRINT - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesCredit;</li>
+	<li>		salesCreditList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+	<li>		CUSTOMER_READ;</li>
+	<li>		LOCATION_READ;</li>
+	<li>		DEPARTMENT_READ;</li>
+	<li>		TRADING_TERM_READ;</li>
+	<li>		CONTACT_READ;</li>
+	<li>		ADDRESS_TYPE_READ;</li>
+</ul>]]></preconditions>
+</testcase>
 <testcase name="SALES_CREDIT_CREATE - Allowed">
 </testcase>
 <testcase name="SALES_CREDIT_VOID - Allowed">
@@ -778,6 +1005,23 @@
 </ul>]]></preconditions>
 </testcase>
 <testcase name="PURCHASE_CREDIT_READ - Allowed">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseCredit;</li>
+	<li>		purchaseCreditList;</li>
+</ul>]]></summary>
+	<preconditions><![CDATA[<p>
+	see description of parent &quot;Role Permissions&quot; suite</p>
+<p>	Dependent permissions:</p><ul>
+	<li>		INVENTORY_READ;</li>
+	<li>		SUPPLIER_READ;</li>
+	<li>		LOCATION_READ;</li>
+	<li>		DEPARTMENT_READ;</li>
+	<li>		TRADING_TERM_READ;</li>
+	<li>		CONTACT_READ;</li>
+	<li>		ADDRESS_TYPE_READ;</li>
+</ul>]]></preconditions>
+</testcase>
+<testcase name="PURCHASE_CREDIT_PRINT - Allowed">
 	<summary><![CDATA[<p>Pages:</p><ul>
 	<li>		purchaseCredit;</li>
 	<li>		purchaseCreditList;</li>
