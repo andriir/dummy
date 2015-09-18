@@ -15,54 +15,19 @@ import java.util.*;
  * Hello world!
  */
 public class App {
+    private static final String ALLOWED_SUITE_NAME = "Allowed";
+    private static final String DENIED_SUITE_NAME = "Denied";
+
     public static void main(String[] args) {
-        Map<String, DPermission> map = groupPagesByPermissions(PermissionsToPagesStrings.all);
+        Map<String, DPermission> permissionsMap = groupPagesByPermissions(PermissionsToPagesStrings.all);
 
         FileWriter w = null;
         File fnew = new File("testcases_to_import.xml");
         try {
             w = new FileWriter(fnew, false);
 
-            Set<String> dbSet = PermissionType.getPermissionTypes();
-
-            w.append(String.format("<testsuite name=\"ALLOWED\" >\n"));
-
-            for (PermissionTypeBlock rootElement : PermissionTypeBlock.values()) {
-                if (rootElement == PermissionTypeBlock.SETTINGS) {
-                    continue; //skip just settings
-                }
-
-                w.append(String.format("<testsuite name=\"%s\" >\n", rootElement.toString()));
-
-                for (PermissionTypeGroup group : rootElement.getGroups()) {
-                    for (GlobalPermission permission : rootElement.getHeaders()) {
-                        String permName = group + "_" + permission;
-                        //check if it is in the list of permissions
-                        if (dbSet.contains(permName)) {
-                            DPermission p = map.get(permName);
-                            if (p != null) {
-                                w.append(generateTestCase(p));
-                                if (TransactionDocumentList.all.contains(permName)) {
-                                    //add one more test case but with different name
-                                    p.setName(p.getName().replace("_READ", "_PRINT"));
-                                    w.append(generateTestCase(p));
-                                }
-                            } else {
-                                w.append(generateTestCase(permName));
-                            }
-                        }
-                    }
-
-
-
-
-                }
-
-                w.append(String.format("</testsuite>\n"));
-
-            }
-
-            w.append(String.format("</testsuite>"));
+            generateLevel1TestSuite(permissionsMap, ALLOWED_SUITE_NAME, w);
+            generateLevel1TestSuite(permissionsMap, DENIED_SUITE_NAME, w);
 
             w.close();
 
@@ -71,16 +36,55 @@ public class App {
         }
     }
 
-    private static String generateTestCase(String permName) {
+    private static void generateLevel1TestSuite(Map<String, DPermission> permissionsMap, String suiteName, FileWriter fileWriter) throws IOException {
+        Set<String> dbSet = PermissionType.getPermissionTypes();
+
+        fileWriter.append(String.format("<testsuite name=\"%s\" >\n", suiteName.toUpperCase()));
+
+        for (PermissionTypeBlock rootElement : PermissionTypeBlock.values()) {
+            if (rootElement == PermissionTypeBlock.SETTINGS) {
+                continue; //skip just settings
+            }
+
+            fileWriter.append(String.format("<testsuite name=\"%s\" >\n", rootElement.toString()));
+
+            for (PermissionTypeGroup group : rootElement.getGroups()) {
+                for (GlobalPermission permission : rootElement.getHeaders()) {
+                    String permName = group + "_" + permission;
+                    //check if it is in the list of permissions
+                    if (dbSet.contains(permName)) {
+                        DPermission p = permissionsMap.get(permName);
+                        if (p != null) {
+                            fileWriter.append(generateTestCase(p, suiteName));
+                            if (TransactionDocumentList.all.contains(permName)) {
+                                //add one more test case but with different name
+                                p.setName(p.copy().getName().replace("_READ", "_PRINT"));
+                                fileWriter.append(generateTestCase(p, suiteName));
+                            }
+                        } else {
+                            fileWriter.append(generateTestCase(permName, suiteName));
+                        }
+                    }
+                }
+            }
+
+            fileWriter.append(String.format("</testsuite>\n"));
+
+        }
+
+        fileWriter.append(String.format("</testsuite>\n"));
+    }
+
+    private static String generateTestCase(String permName, String suiteName) {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("<testcase name=\"%s - Allowed\">\n", permName));
+        sb.append(String.format("<testcase name=\"%s - %s\">\n", permName, suiteName));
         sb.append(String.format("</testcase>\n"));
         return sb.toString();
     }
 
-    private static String generateTestCase(DPermission permission) {
+    private static String generateTestCase(DPermission permission, String suiteName) {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("<testcase name=\"%s - Allowed\">\n", permission.getName()));
+        sb.append(String.format("<testcase name=\"%s - %s\">\n", permission.getName(), suiteName));
         //pages
         sb.append(String.format("\t<summary><![CDATA[<p>Pages:</p><ul>\n"));
         for (String s : permission.getPages()) {
@@ -89,15 +93,17 @@ public class App {
         sb.append(String.format("</ul>]]></summary>\n"));
 
         //dependencies
-        sb.append(String.format("\t<preconditions><![CDATA[<p>\n"));
-        sb.append(String.format("\tsee description of parent &quot;Role Permissions&quot; suite</p>\n"));
-        if (permission.getDependencies() != null) {
-            sb.append(String.format("<p>\tDependent permissions:</p><ul>\n"));
-            for (String s : permission.getDependencies()) {
-                sb.append(String.format("\t<li>\t\t%s;</li>\n", s));
+        if (suiteName.equals(ALLOWED_SUITE_NAME)) {
+            sb.append(String.format("\t<preconditions><![CDATA[<p>\n"));
+            sb.append(String.format("\tsee description of parent &quot;Role Permissions&quot; suite</p>\n"));
+            if (permission.getDependencies() != null) {
+                sb.append(String.format("<p>\tDependent permissions:</p><ul>\n"));
+                for (String s : permission.getDependencies()) {
+                    sb.append(String.format("\t<li>\t\t%s;</li>\n", s));
+                }
             }
+            sb.append(String.format("</ul>]]></preconditions>\n"));
         }
-        sb.append(String.format("</ul>]]></preconditions>\n"));
 
         sb.append(String.format("</testcase>\n"));
         return sb.toString();

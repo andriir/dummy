@@ -1662,4 +1662,995 @@
 <testcase name="EMAIL_SEND - Allowed">
 </testcase>
 </testsuite>
+</testsuite><testsuite name="DENIED" >
+<testsuite name="SALES" >
+<testcase name="SALES_QUOTE_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesQuote;</li>
+	<li>		salesQuotesList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_QUOTE_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesQuote;</li>
+	<li>		salesQuotesList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_QUOTE_CREATE - Denied">
+</testcase>
+<testcase name="SALES_QUOTE_UPDATE - Denied">
+</testcase>
+<testcase name="SALES_QUOTE_VOID - Denied">
+</testcase>
+<testcase name="SALES_ORDER_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesOrder;</li>
+	<li>		salesOrdersList;</li>
+	<li>		warehousingSalesOrdersList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_ORDER_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesOrder;</li>
+	<li>		salesOrdersList;</li>
+	<li>		warehousingSalesOrdersList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_ORDER_CREATE - Denied">
+</testcase>
+<testcase name="SALES_ORDER_UPDATE - Denied">
+</testcase>
+<testcase name="SALES_ORDER_VOID - Denied">
+</testcase>
+<testcase name="SALES_DELIVERY_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesDeliveriesList;</li>
+	<li>		salesDelivery;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_DELIVERY_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesDeliveriesList;</li>
+	<li>		salesDelivery;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_DELIVERY_CREATE - Denied">
+</testcase>
+<testcase name="SALES_DELIVERY_UPDATE - Denied">
+</testcase>
+<testcase name="SALES_DELIVERY_VOID - Denied">
+</testcase>
+<testcase name="SALES_INVOICE_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesInvoice;</li>
+	<li>		salesInvoicesList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_INVOICE_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesInvoice;</li>
+	<li>		salesInvoicesList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_INVOICE_CREATE - Denied">
+</testcase>
+<testcase name="SALES_INVOICE_VOID - Denied">
+</testcase>
+<testcase name="SALES_INVOICE_ALLOCATE - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesInvoiceAllocate;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_BY_CUSTOMER_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesByCustomerReport;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_RETURN_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesReturn;</li>
+	<li>		salesReturnsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_RETURN_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesReturn;</li>
+	<li>		salesReturnsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_RETURN_CREATE - Denied">
+</testcase>
+<testcase name="SALES_RETURN_UPDATE - Denied">
+</testcase>
+<testcase name="SALES_RETURN_VOID - Denied">
+</testcase>
+<testcase name="SALES_RETURN_AUTHORISATION_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesReturnAuthorisation;</li>
+	<li>		salesReturnAuthorisationList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_RETURN_AUTHORISATION_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesReturnAuthorisation;</li>
+	<li>		salesReturnAuthorisationList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_RETURN_AUTHORISATION_CREATE - Denied">
+</testcase>
+<testcase name="SALES_RETURN_AUTHORISATION_UPDATE - Denied">
+</testcase>
+<testcase name="SALES_RETURN_AUTHORISATION_VOID - Denied">
+</testcase>
+<testcase name="CUSTOMER_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesDocumentsWithCustomerTabList;</li>
+	<li>		customerCatalog;</li>
+	<li>		customer;</li>
+	<li>		customerList;</li>
+	<li>		customerAdjustmentCustomerCatalog;</li>
+	<li>		customerReceiptCustomerCatalog;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="CUSTOMER_CREATE - Denied">
+</testcase>
+<testcase name="CUSTOMER_UPDATE - Denied">
+</testcase>
+<testcase name="CUSTOMER_TEMPLATE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		customerTemplate;</li>
+	<li>		customerTemplateList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="CUSTOMER_TEMPLATE_CREATE - Denied">
+</testcase>
+<testcase name="CUSTOMER_TEMPLATE_UPDATE - Denied">
+</testcase>
+</testsuite>
+<testsuite name="PURCHASE" >
+<testcase name="PURCHASE_ORDER_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseOrder;</li>
+	<li>		purchaseOrdersList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_ORDER_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseOrder;</li>
+	<li>		purchaseOrdersList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_ORDER_CREATE - Denied">
+</testcase>
+<testcase name="PURCHASE_ORDER_UPDATE - Denied">
+</testcase>
+<testcase name="PURCHASE_ORDER_VOID - Denied">
+</testcase>
+<testcase name="PURCHASE_RECEIVAL_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseReceival;</li>
+	<li>		purchaseReceivalList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_RECEIVAL_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseReceival;</li>
+	<li>		purchaseReceivalList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_RECEIVAL_CREATE - Denied">
+</testcase>
+<testcase name="PURCHASE_RECEIVAL_UPDATE - Denied">
+</testcase>
+<testcase name="PURCHASE_RECEIVAL_VOID - Denied">
+</testcase>
+<testcase name="PURCHASE_INVOICE_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseInvoice;</li>
+	<li>		purchaseInvoicesList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_INVOICE_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseInvoice;</li>
+	<li>		purchaseInvoicesList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_INVOICE_CREATE - Denied">
+</testcase>
+<testcase name="PURCHASE_INVOICE_VOID - Denied">
+</testcase>
+<testcase name="PURCHASE_INVOICE_ALLOCATE - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseInvoiceAllocate;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_RETURN_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseReturn;</li>
+	<li>		purchaseReturnsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_RETURN_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseReturn;</li>
+	<li>		purchaseReturnsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_RETURN_CREATE - Denied">
+</testcase>
+<testcase name="PURCHASE_RETURN_UPDATE - Denied">
+</testcase>
+<testcase name="PURCHASE_RETURN_VOID - Denied">
+</testcase>
+<testcase name="PURCHASE_RETURN_AUTHORISATION_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseReturnAuthorisation;</li>
+	<li>		purchaseReturnAuthorisationList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_RETURN_AUTHORISATION_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseReturnAuthorisation;</li>
+	<li>		purchaseReturnAuthorisationList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_RETURN_AUTHORISATION_CREATE - Denied">
+</testcase>
+<testcase name="PURCHASE_RETURN_AUTHORISATION_UPDATE - Denied">
+</testcase>
+<testcase name="PURCHASE_RETURN_AUTHORISATION_VOID - Denied">
+</testcase>
+<testcase name="SUPPLIER_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseDocumentsWithSupplierTabList;</li>
+	<li>		supplierCatalog;</li>
+	<li>		supplier;</li>
+	<li>		supplierAdjustmentSupplierCatalog;</li>
+	<li>		supplierPaymentSupplierCatalog;</li>
+	<li>		supplierList;</li>
+	<li>		purchaseSuppliersList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SUPPLIER_CREATE - Denied">
+</testcase>
+<testcase name="SUPPLIER_UPDATE - Denied">
+</testcase>
+<testcase name="SUPPLIER_TEMPLATE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		supplierTemplate;</li>
+	<li>		supplierTemplateList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SUPPLIER_TEMPLATE_CREATE - Denied">
+</testcase>
+<testcase name="SUPPLIER_TEMPLATE_UPDATE - Denied">
+</testcase>
+<testcase name="PURCHASE_BY_SUPPLIER_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseBySupplierReport;</li>
+</ul>]]></summary>
+</testcase>
+</testsuite>
+<testsuite name="INVENTORY" >
+<testcase name="INVENTORY_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		buyableInventoryItemCatalog;</li>
+	<li>		itemCatalog;</li>
+	<li>		physicalBuyableIItemCatalog;</li>
+	<li>		physicalInventoryItemCatalog;</li>
+	<li>		physicalSellableIItemCatalog;</li>
+	<li>		physicalStockcontrolledInventoryItemCatalog;</li>
+	<li>		rawGoodsCatalog;</li>
+	<li>		sellableInventoryItemCatalog;</li>
+	<li>		inventoryItem;</li>
+	<li>		inventoryItemList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="INVENTORY_CREATE - Denied">
+</testcase>
+<testcase name="INVENTORY_UPDATE - Denied">
+</testcase>
+<testcase name="STOCKTAKE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		stocktake;</li>
+	<li>		stocktakesList;</li>
+	<li>		stocktakeVarianceReport;</li>
+	<li>		warehousingStocktakesList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="STOCKTAKE_CREATE - Denied">
+</testcase>
+<testcase name="STOCKTAKE_UPDATE - Denied">
+</testcase>
+<testcase name="BILL_OF_MATERIAL_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		billOfMaterials;</li>
+	<li>		billOfMaterialsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="BILL_OF_MATERIAL_CREATE - Denied">
+</testcase>
+<testcase name="BILL_OF_MATERIAL_UPDATE - Denied">
+</testcase>
+<testcase name="REVALUATION_CREATE - Denied">
+</testcase>
+<testcase name="INVENTORY_MOVEMENT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		movementsWithInventoryItemTabList;</li>
+	<li>		purchaseMovementsWithInventoryItemTabList;</li>
+	<li>		salesMovementsWithInventoryItemTabList;</li>
+	<li>		inventoryMovement;</li>
+	<li>		inventoryMovementsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="INVENTORY_MOVEMENT_CREATE - Denied">
+</testcase>
+<testcase name="INVENTORY_MOVEMENT_VOID - Denied">
+</testcase>
+<testcase name="INVENTORY_TEMPLATE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		inventoryItemTemplate;</li>
+	<li>		inventoryItemTemplates;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="INVENTORY_TEMPLATE_CREATE - Denied">
+</testcase>
+<testcase name="INVENTORY_TEMPLATE_UPDATE - Denied">
+</testcase>
+<testcase name="PRODUCT_LIST_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		productListReport;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="REORDER_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		reorderReport;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PRODUCT_QUANTITY_BY_PRODUCT_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		productQuantityByProductReport;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_BY_PRODUCT_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesByProductReport;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_BY_PRODUCT_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseByProductReport;</li>
+</ul>]]></summary>
+</testcase>
+</testsuite>
+<testsuite name="WAREHOUSING" >
+<testcase name="PICKING_SLIP_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		pickingSlip;</li>
+	<li>		pickingSlipList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PICKING_SLIP_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		pickingSlip;</li>
+	<li>		pickingSlipList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PICKING_SLIP_CREATE - Denied">
+</testcase>
+<testcase name="PICKING_SLIP_UPDATE - Denied">
+</testcase>
+<testcase name="PUT_AWAY_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		putAway;</li>
+	<li>		putAwayList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PUT_AWAY_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		putAway;</li>
+	<li>		putAwayList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PUT_AWAY_CREATE - Denied">
+</testcase>
+<testcase name="PUT_AWAY_UPDATE - Denied">
+</testcase>
+<testcase name="LOCATION_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		binsPickingCatalog;</li>
+	<li>		binsPutAwayCatalog;</li>
+	<li>		location;</li>
+	<li>		locationList;</li>
+	<li>		warehousingLocationsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="LOCATION_CREATE - Denied">
+</testcase>
+<testcase name="LOCATION_UPDATE - Denied">
+</testcase>
+<testcase name="PRODUCT_QUANTITY_BY_LOCATION_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		productQuantityByLocationReport;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PRODUCT_QUANTITY_BY_BIN_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		productQuantityByBin;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PRODUCT_MOVEMENT_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		productMovementReport;</li>
+</ul>]]></summary>
+</testcase>
+</testsuite>
+<testsuite name="ASSEMBLY" >
+<testcase name="PRODUCTION_ORDER_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		productionOrder;</li>
+	<li>		productionOrdersList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PRODUCTION_ORDER_CREATE - Denied">
+</testcase>
+<testcase name="PRODUCTION_ORDER_UPDATE - Denied">
+</testcase>
+</testsuite>
+<testsuite name="RECEIVABLES" >
+<testcase name="CUSTOMER_RECEIPT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		customerReceipt;</li>
+	<li>		customerReceiptsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="CUSTOMER_RECEIPT_CREATE - Denied">
+</testcase>
+<testcase name="CUSTOMER_RECEIPT_VOID - Denied">
+</testcase>
+<testcase name="CUSTOMER_RECEIPT_ALLOCATE - Denied">
+</testcase>
+<testcase name="SALES_CREDIT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesCredit;</li>
+	<li>		salesCreditList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_CREDIT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesCredit;</li>
+	<li>		salesCreditList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SALES_CREDIT_CREATE - Denied">
+</testcase>
+<testcase name="SALES_CREDIT_VOID - Denied">
+</testcase>
+<testcase name="SALES_CREDIT_ALLOCATE - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesCreditAllocate;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="CUSTOMER_ADJUSTMENT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		customerAdjustment;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="CUSTOMER_ADJUSTMENT_CREATE - Denied">
+</testcase>
+<testcase name="CUSTOMER_ADJUSTMENT_VOID - Denied">
+</testcase>
+<testcase name="CUSTOMER_ADJUSTMENT_ALLOCATE - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		customerAdjustmentList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="CUSTOMER_AGED_BALANCE_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		customerAgedBalanceReport;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="CUSTOMER_STATEMENTS_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		customerStatementReport;</li>
+</ul>]]></summary>
+</testcase>
+</testsuite>
+<testsuite name="PAYABLES" >
+<testcase name="SUPPLIER_PAYMENT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		supplierPayment;</li>
+	<li>		payablesSupplierPaymentsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SUPPLIER_PAYMENT_CREATE - Denied">
+</testcase>
+<testcase name="SUPPLIER_PAYMENT_VOID - Denied">
+</testcase>
+<testcase name="SUPPLIER_PAYMENT_ALLOCATE - Denied">
+</testcase>
+<testcase name="SUPPLIER_ADJUSTMENT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		supplierAdjustment;</li>
+	<li>		supplierAdjustmentList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="SUPPLIER_ADJUSTMENT_CREATE - Denied">
+</testcase>
+<testcase name="SUPPLIER_ADJUSTMENT_VOID - Denied">
+</testcase>
+<testcase name="SUPPLIER_ADJUSTMENT_ALLOCATE - Denied">
+</testcase>
+<testcase name="SUPPLIER_AGED_BALANCE_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		supplierAgedBalances;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_CREDIT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseCredit;</li>
+	<li>		purchaseCreditList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_CREDIT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseCredit;</li>
+	<li>		purchaseCreditList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PURCHASE_CREDIT_CREATE - Denied">
+</testcase>
+<testcase name="PURCHASE_CREDIT_VOID - Denied">
+</testcase>
+<testcase name="PURCHASE_CREDIT_ALLOCATE - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		purchaseCreditAllocate;</li>
+</ul>]]></summary>
+</testcase>
+</testsuite>
+<testsuite name="CONTACTS" >
+<testcase name="CONTACT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		contactsCustomerList;</li>
+	<li>		contact;</li>
+	<li>		contactList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="CONTACT_CREATE - Denied">
+</testcase>
+<testcase name="CONTACT_UPDATE - Denied">
+</testcase>
+<testcase name="SALES_BY_REPRESENTATIVE_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		salesByRepresentativeReport;</li>
+</ul>]]></summary>
+</testcase>
+</testsuite>
+<testsuite name="FINANCE" >
+<testcase name="BALANCE_SHEET_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		balanceSheetReport;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PROFIT_AND_LOSS_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		profitAndLossReport;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="TRIAL_BALANCE_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		trialBalanceReport;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="UNREALISED_BALANCE_SHEET_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		unrealisedBalanceSheet;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="UNREALISED_GAIN_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		unrealisedGainReport;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="CHART_OF_ACCOUNTS_REPORT_PRINT - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		chartofAccountsReport;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="TAX_STATEMENT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		taxStatement;</li>
+	<li>		taxStatementList;</li>
+	<li>		taxSummaryReport;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="TAX_STATEMENT_CREATE - Denied">
+</testcase>
+<testcase name="TAX_STATEMENT_UPDATE - Denied">
+</testcase>
+<testcase name="BANK_DEPOSIT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		deposit;</li>
+	<li>		bankAccountDepositsList;</li>
+	<li>		depositsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="BANK_DEPOSIT_CREATE - Denied">
+</testcase>
+<testcase name="BANK_DEPOSIT_UPDATE - Denied">
+</testcase>
+<testcase name="BANK_DEPOSIT_VOID - Denied">
+</testcase>
+<testcase name="BANK_STATEMENT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		reconciliation;</li>
+	<li>		bankAccountReconciliationsList;</li>
+	<li>		reconciliationsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="BANK_STATEMENT_CREATE - Denied">
+</testcase>
+<testcase name="BANK_STATEMENT_UPDATE - Denied">
+</testcase>
+<testcase name="BANK_TRANSFER_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		bankTransfer;</li>
+	<li>		bankTransferList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="BANK_TRANSFER_CREATE - Denied">
+</testcase>
+<testcase name="BANK_TRANSFER_VOID - Denied">
+</testcase>
+<testcase name="FINANCIAL_ACCOUNT_TRANSACTION_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		bankAccountTransactionsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="FINANCIAL_ACCOUNT_TRANSACTION_CREATE - Denied">
+</testcase>
+<testcase name="FINANCIAL_ACCOUNT_TRANSACTION_UPDATE - Denied">
+</testcase>
+<testcase name="FINANCIAL_ACCOUNT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		bankAccount;</li>
+	<li>		bankAccountsList;</li>
+	<li>		undepositedFund;</li>
+	<li>		undepositedFundDepositsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="FINANCIAL_ACCOUNT_CREATE - Denied">
+</testcase>
+<testcase name="FINANCIAL_ACCOUNT_UPDATE - Denied">
+</testcase>
+<testcase name="GENERAL_PAYMENT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		generalPayment;</li>
+	<li>		generalPaymentList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="GENERAL_PAYMENT_CREATE - Denied">
+</testcase>
+<testcase name="GENERAL_PAYMENT_VOID - Denied">
+</testcase>
+<testcase name="GENERAL_RECEIPT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		generalReceipt;</li>
+	<li>		generalReceiptList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="GENERAL_RECEIPT_CREATE - Denied">
+</testcase>
+<testcase name="GENERAL_RECEIPT_VOID - Denied">
+</testcase>
+<testcase name="GL_JOURNAL_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		journal;</li>
+	<li>		standingJournal;</li>
+	<li>		accountJournalList;</li>
+	<li>		journalItemsList;</li>
+	<li>		journalsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="GL_JOURNAL_CREATE - Denied">
+</testcase>
+<testcase name="GL_JOURNAL_VOID - Denied">
+</testcase>
+<testcase name="STANDING_GENERAL_JOURNAL_READ - Denied">
+</testcase>
+<testcase name="STANDING_GENERAL_JOURNAL_CREATE - Denied">
+</testcase>
+<testcase name="STANDING_GENERAL_JOURNAL_UPDATE - Denied">
+</testcase>
+</testsuite>
+<testsuite name="SETTINGS_GENERAL" >
+<testcase name="COMPANY_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		companyDetails;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="COMPANY_CREATE - Denied">
+</testcase>
+<testcase name="COMPANY_UPDATE - Denied">
+</testcase>
+<testcase name="DEPARTMENT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		department;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="DEPARTMENT_CREATE - Denied">
+</testcase>
+<testcase name="DEPARTMENT_UPDATE - Denied">
+</testcase>
+<testcase name="TRANSACTION_NUMBER_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		documentNumber;</li>
+	<li>		documentNumberList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="TRANSACTION_NUMBER_CREATE - Denied">
+</testcase>
+<testcase name="TRANSACTION_NUMBER_UPDATE - Denied">
+</testcase>
+<testcase name="CUSTOM_REPORT_TYPE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		reportManagement;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="CUSTOM_REPORT_TYPE_CREATE - Denied">
+</testcase>
+<testcase name="CUSTOM_REPORT_TYPE_UPDATE - Denied">
+</testcase>
+<testcase name="REPORT_MANAGEMENT_RESETDEFAULTREPORTS - Denied">
+</testcase>
+<testcase name="COUNTRY_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		country;</li>
+	<li>		countryList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="COUNTRY_CREATE - Denied">
+</testcase>
+<testcase name="COUNTRY_UPDATE - Denied">
+</testcase>
+</testsuite>
+<testsuite name="SETTINGS_TRADING" >
+<testcase name="CONTACT_DETAIL_TYPE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		contactDetailType;</li>
+	<li>		contactDetailTypeList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="CONTACT_DETAIL_TYPE_CREATE - Denied">
+</testcase>
+<testcase name="CONTACT_DETAIL_TYPE_UPDATE - Denied">
+</testcase>
+<testcase name="TRADING_TERM_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		tradingTerm;</li>
+	<li>		tradingTermsList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="TRADING_TERM_CREATE - Denied">
+</testcase>
+<testcase name="TRADING_TERM_UPDATE - Denied">
+</testcase>
+<testcase name="TRADING_POLICY_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		tradingPolicy;</li>
+	<li>		tradingPolicyList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="TRADING_POLICY_CREATE - Denied">
+</testcase>
+<testcase name="TRADING_POLICY_UPDATE - Denied">
+</testcase>
+<testcase name="ADDRESS_TYPE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		addressTypeList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="ADDRESS_TYPE_CREATE - Denied">
+</testcase>
+<testcase name="ADDRESS_TYPE_UPDATE - Denied">
+</testcase>
+<testcase name="CONTACT_TYPE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		contactType;</li>
+	<li>		contactTypeList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="CONTACT_TYPE_CREATE - Denied">
+</testcase>
+<testcase name="CONTACT_TYPE_UPDATE - Denied">
+</testcase>
+</testsuite>
+<testsuite name="SETTINGS_PRODUCT_AND_SERVICES" >
+<testcase name="UNIT_OF_MEASURE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		unitOfMeasure;</li>
+	<li>		unitOfMeasureList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="UNIT_OF_MEASURE_CREATE - Denied">
+</testcase>
+<testcase name="UNIT_OF_MEASURE_UPDATE - Denied">
+</testcase>
+<testcase name="WAREHOUSE_BIN_TYPE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		binType;</li>
+	<li>		binTypeList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="WAREHOUSE_BIN_TYPE_CREATE - Denied">
+</testcase>
+<testcase name="WAREHOUSE_BIN_TYPE_UPDATE - Denied">
+</testcase>
+<testcase name="INVENTORY_ITEM_TYPE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		itemType;</li>
+	<li>		itemTypeList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="INVENTORY_ITEM_TYPE_CREATE - Denied">
+</testcase>
+<testcase name="INVENTORY_ITEM_TYPE_UPDATE - Denied">
+</testcase>
+<testcase name="BIN_TYPE_READ - Denied">
+</testcase>
+<testcase name="BIN_TYPE_CREATE - Denied">
+</testcase>
+<testcase name="BIN_TYPE_UPDATE - Denied">
+</testcase>
+<testcase name="PRICE_SCALE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		priceScale;</li>
+	<li>		priceScaleList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="PRICE_SCALE_CREATE - Denied">
+</testcase>
+<testcase name="PRICE_SCALE_UPDATE - Denied">
+</testcase>
+<testcase name="DISCOUNT_SCALE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		discountScale;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="DISCOUNT_SCALE_CREATE - Denied">
+</testcase>
+<testcase name="DISCOUNT_SCALE_UPDATE - Denied">
+</testcase>
+</testsuite>
+<testsuite name="SETTINGS_GENERAL_LEDGER" >
+<testcase name="GL_ACCOUNT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		chartOfAccountAdjustmentCatalog;</li>
+	<li>		chartOfAccountAssetCatalog;</li>
+	<li>		chartOfAccountCatalog;</li>
+	<li>		chartOfAccountCostCatalog;</li>
+	<li>		chartOfAccountDBNICatalog;</li>
+	<li>		chartOfAccountIncomeCatalog;</li>
+	<li>		chartOfAccountRBNICatalog;</li>
+	<li>		chatOfAccountGainLossCatalog;</li>
+	<li>		chatOfAccountPayableCatalog;</li>
+	<li>		chatOfAccountPurchaseTaxCatalog;</li>
+	<li>		chatOfAccountReceivableCatalog;</li>
+	<li>		chatOfAccountSalesTaxCatalog;</li>
+	<li>		account;</li>
+	<li>		chartOfAccountList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="GL_ACCOUNT_CREATE - Denied">
+</testcase>
+<testcase name="GL_ACCOUNT_UPDATE - Denied">
+</testcase>
+<testcase name="GL_ACCOUNT_TYPE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		accountTypeList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="GL_ACCOUNT_TYPE_CREATE - Denied">
+</testcase>
+<testcase name="GL_ACCOUNT_TYPE_UPDATE - Denied">
+</testcase>
+<testcase name="GL_ACCOUNT_CLASS_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		accountClass;</li>
+	<li>		accountClassList;</li>
+	<li>		accountType;</li>
+	<li>		addressType;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="GL_ACCOUNT_CLASS_CREATE - Denied">
+</testcase>
+<testcase name="GL_ACCOUNT_CLASS_UPDATE - Denied">
+</testcase>
+</testsuite>
+<testsuite name="SETTINGS_FINANCIAL" >
+<testcase name="CURRENCY_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		currencyCatalog;</li>
+	<li>		currency;</li>
+	<li>		currencyList;</li>
+	<li>		departmentList;</li>
+	<li>		discountScaleList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="CURRENCY_CREATE - Denied">
+</testcase>
+<testcase name="CURRENCY_UPDATE - Denied">
+</testcase>
+<testcase name="EXCHANGE_RATE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		exchangeRateList;</li>
+	<li>		exchangeRate;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="EXCHANGE_RATE_CREATE - Denied">
+</testcase>
+<testcase name="EXCHANGE_RATE_UPDATE - Denied">
+</testcase>
+<testcase name="TENDER_TYPE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		tenderType;</li>
+	<li>		tenderTypesList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="TENDER_TYPE_CREATE - Denied">
+</testcase>
+<testcase name="TENDER_TYPE_UPDATE - Denied">
+</testcase>
+<testcase name="TAX_TYPE_READ - Denied">
+</testcase>
+<testcase name="TAX_TYPE_CREATE - Denied">
+</testcase>
+<testcase name="TAX_TYPE_UPDATE - Denied">
+</testcase>
+<testcase name="TAX_CATEGORY_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		taxCategory;</li>
+	<li>		taxCategoryList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="TAX_CATEGORY_CREATE - Denied">
+</testcase>
+<testcase name="TAX_CATEGORY_UPDATE - Denied">
+</testcase>
+<testcase name="REPORTING_PERIOD_TYPE_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		reportingPeriod;</li>
+	<li>		reportingPeriodList;</li>
+	<li>		taxType;</li>
+	<li>		taxTypeList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="REPORTING_PERIOD_TYPE_CREATE - Denied">
+</testcase>
+<testcase name="REPORTING_PERIOD_TYPE_UPDATE - Denied">
+</testcase>
+</testsuite>
+<testsuite name="SETTINGS_SECURITY" >
+<testcase name="USER_ACCOUNT_READ - Denied">
+	<summary><![CDATA[<p>Pages:</p><ul>
+	<li>		userAccount;</li>
+	<li>		userAccountList;</li>
+</ul>]]></summary>
+</testcase>
+<testcase name="USER_ACCOUNT_CREATE - Denied">
+</testcase>
+<testcase name="USER_ACCOUNT_UPDATE - Denied">
+</testcase>
+</testsuite>
+<testsuite name="SETTINGS_DATA" >
+<testcase name="DATA_IMPORT_READ - Denied">
+</testcase>
+<testcase name="DATA_EXPORT_READ - Denied">
+</testcase>
+</testsuite>
+<testsuite name="GENERAL" >
+<testcase name="EMAIL_SEND - Denied">
+</testcase>
+</testsuite>
 </testsuite>

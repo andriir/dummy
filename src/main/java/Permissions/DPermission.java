@@ -34,4 +34,12 @@ public class DPermission {
     public void setPages(List<String> pages) {
         this.pages = pages;
     }
+
+    public DPermission copy() {
+        DPermission copy = new DPermission();
+        copy.setName(this.getName());
+        copy.setDependencies(this.getDependencies());
+        copy.setPages(this.getPages());
+        return copy;
+    }
 }
