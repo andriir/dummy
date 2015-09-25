@@ -31,5 +31,3 @@ Line 20
 Line 21
 Line 22
 Line 23
-Line 23
-Line 23
